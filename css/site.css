@@ -1,3 +1,5 @@
+/* primary color of website: #fed136; */
+
 body{
 	font-family: lato;
 	color: black;
@@ -15,6 +17,7 @@ h1{
 h3{
 	color: white;
 }
+
 hr{
 	width: 50%;
 	border: 1px solid;
@@ -28,6 +31,7 @@ header.banner {
     background-attachment: scroll;
     background-position: center center;
     text-align: center;
+    padding-bottom: 100px;
 }
 
 
@@ -787,6 +791,19 @@ height: 400px;
 width: 100%;
 }
 
+/* h4 tag "address" */
+.addr-padding {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#contact h4 {
+  color: white;
+}
+
+
+
+
 @media (max-width: 768px) {
   h1 {
     font-size: 12vw;
@@ -802,3 +819,7 @@ width: 100%;
 
   
 } 
+
+.pri-color {
+  color: #fed136;
+}
