@@ -724,9 +724,7 @@ ul.social-buttons li a {
   background-color: #212529;
 }
 
-ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
-  background-color: #fed136;
-}
+
 
 /* Our Custom Code */
 
@@ -770,7 +768,24 @@ a:hover, a:active, a:focus {
   outline: 0 !important;
 }
 
+i.fa-bars {
+  color: black;
+}
 
+ul.social-buttons li a {
+  background-color: #3b5998;
+}
+
+ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
+  background-color: white;
+  color: #3b5998;
+}
+
+/* google maps */
+#map {
+height: 400px;
+width: 100%;
+}
 
 @media (max-width: 768px) {
   h1 {
