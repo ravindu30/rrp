@@ -27,11 +27,11 @@ hr{
 header.banner {
 	background-image: url(../img/cover.jpg);
 	background-size: cover;
-	    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center center;
-    text-align: center;
-    padding-bottom: 100px;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+  background-position: center center;
+  text-align: center;
+  padding-bottom: 100px;
 }
 
 
@@ -97,6 +97,7 @@ section h3.section-subheading {
 .btn {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
+  border: 0;
 }
 
 .btn-xl {
@@ -274,6 +275,8 @@ header.masthead .intro-text .intro-heading {
   max-width: 400px;
   margin: 0 auto;
   cursor: pointer;
+  overflow: hidden;
+
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
@@ -289,6 +292,7 @@ header.masthead .intro-text .intro-heading {
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
   opacity: 1;
+  transform: scale(1.3);
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
@@ -767,7 +771,7 @@ ul.social-buttons li a {
 }
 
 a:hover, a:active, a:focus {
-  
+  opacity: .8;
   border: 0;
   outline: 0 !important;
 }
@@ -776,8 +780,12 @@ i.fa-bars {
   color: black;
 }
 
-ul.social-buttons li a {
+ul.social-buttons li:nth-child(1) a{
   background-color: #3b5998;
+}
+
+ul.social-buttons li:nth-child(2) a{
+  background-color: #34af23;
 }
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
@@ -801,8 +809,53 @@ width: 100%;
   color: white;
 }
 
+#address-margin{
+  margin-bottom: 0;
+}
+
+#sendBtn {
+  color: black;
+}
+
+#sendBtn:hover {
+  opacity: .8;
+}
 
 
+/*
+
+font-weight: 700;
+font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+color: white;
+font-size: 1.75rem;
+line-height: 1.2;
+*/
+
+
+/* typed.js */
+  
+.textWrap span{
+  font-weight: 700;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: white;
+  font-size: 1.75rem;
+  line-height: 1.2;
+}
+
+/* end */
+
+
+#ulNoBullets {
+  list-style-type: none;
+}
+
+
+/*modal*/
+
+.modal-body img {
+  width: 250px;
+  height: 150px;
+}
 
 @media (max-width: 768px) {
   h1 {
@@ -817,7 +870,9 @@ width: 100%;
     content: '';
   }
 
-  
+  #contact-padd {
+    padding-bottom: 15px;
+  }
 } 
 
 .pri-color {
